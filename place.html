@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Information about Kampala, Uganda">
-    <meta name="author" content="Tracy Nalubwama.">
+    <meta name="author" content="Nalubwama Tracy Catherine">
     <title>Kampala, Uganda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,9 +21,9 @@
         <!-- Hero Section with srcset for responsive images -->
         <div class="hero-section">
             <picture>
-                <source srcset="images/kla.webp" media="(max-width: 767px)">
-                <source srcset="images/kla.webp" media="(min-width: 768px)">
-                <img src="images/kampala.webp" alt="Scenic view of Kampala City" class="hero-image">
+                <source srcset="images/Kampala-1min.webp" media="(max-width: 767px)">
+                <source srcset="images/Kampala-1.webp" media="(min-width: 768px)">
+                <img src="images/Kampala-1.webp" alt="Scenic view of Kampala City" class="hero-image">
             </picture>
         
 
@@ -44,7 +45,7 @@
             <!-- Weather Section -->
             <section class="weather-section card">
                 <h2>Weather <span class="weather-icon">⛅</span></h2>
-                <img src="images/images-_3_.svg" alt="Weather Icon" class="mobile-weather-icon">
+                <img src="images/weather_icon.svg" alt="Weather Icon" class="mobile-weather-icon">
                 <ul>
                     <li><strong>Temperature:</strong> <span id="temp">Loading...</span></li>
                     <li><strong>Conditions:</strong> <span id="conditions">Loading...</span></li>
@@ -54,11 +55,10 @@
             </section>
         </div>
     </main>
-A
+
     <footer>
-        <p>© <span id="currentyear"></span> | Tracy Nalubwama | Kampala, Uganda</p>
+        <p>© <span id="currentyear"></span> | Nalubwama Tracy Catherine | Kampala, Uganda</p>
         <p id="lastModified" class="header-highlight"></p>
     </footer>
-    <script src="scripts/place.js" defer></script>
 </body>
 </html>
