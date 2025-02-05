@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local History and Landmarks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showLandmarkInfo(landmark) {
+            alert("You clicked on " + landmark + "! Here you can provide more details about this landmark.");
+        }
+
+        function addLandmark() {
+            const landmarkName = document.getElementById('landmark-name').value;
+            const landmarkDescription = document.getElementById('landmark-description').value;
+
+            if (landmarkName && landmarkDescription) {
+                const landmarksSection = document.getElementById('landmark-list');
+                const newLandmark = document.createElement('div');
+                newLandmark.innerHTML = `<h3>${landmarkName}</h3><p>${landmarkDescription}</p>`;
+                newLandmark.onclick = () => showLandmarkInfo(landmarkName);
+                landmarksSection.appendChild(newLandmark);
+
+                document.getElementById('landmark-name').value = '';
+                document.getElementById('landmark-description').value = '';
+            } else {
+                alert("Please enter both a name and a description for the landmark.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Local History and Landmarks</h1>
+    </header>
+    <nav>
+        <a href="#timeline">Historical Timeline</a>
+        <a href="#landmarks">Landmark Profiles</a>
+        <a href="#oral-histories">Oral Histories</a>
+        <a href="#visitor-info">Visitor Info</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="timeline">
+        <h2>Historical Timeline</h2>
+        <p>Explore key events in our local history.</p>
+        <!-- Add timeline content here -->
+    </section>
+    <section id="landmarks">
+        <h2>Landmark Profiles</h2>
+        <p>Discover significant landmarks in our area.</p>
+        <input type="text" id="landmark-name" placeholder="Landmark Name" />
+        <input type="text" id="landmark-description" placeholder="Landmark Description" />
+        <button onclick="addLandmark()">Add Landmark</button>
+        <div id="landmark-list"></div>
+    </section>
+    <section id="oral-histories">
+        <h2>Oral Histories</h2>
+        <p>Share your stories and memories.</p>
+        <!-- Add oral history content here -->
+    </section>
+    <section id="visitor-info">
+        <h2>Visitor Information</h2>
+        <p>Guided tours, events, and resources.</p>
+        <!-- Add visitor info here -->
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>View historical and contemporary images.</p>
+        <!-- Add gallery content here -->
+    </section>
+    <section id="blog">
+        <h2>Blog/Articles</h2>
+        <p>Read about local history topics and events.</p>
+        <!-- Add blog content here -->
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Send us your feedback or inquiries.</p>
+        <!-- Add contact form here -->
+    </section>
+    <footer>
+        <p>&copy; 2025 Local History and Landmarks | TRACY CATHERINE NALUBWAMA</p>
+    </footer>
+</body>
+</html>
