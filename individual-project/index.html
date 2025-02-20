@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover healthy living practices and wellness tips">
+    <title>Healthy Living Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/farming-places.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo" width="50" height="50" loading="lazy">
+            </div>
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Healthy Living Hub</h1>
+                <p>Discover tips and practices for a healthier lifestyle</p>
+                <a href="#wellness-tips" class="cta-button">Explore Tips</a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Welcome to Healthy Living Hub</h2>
+            <p>Your go-to resource for healthy living practices and wellness tips.</p>
+        </section>
+
+       
+        <section id="farming-places" class="farming-places-section">
+            <h2>Health Tips</h2>
+            <div id="farming-places-grid" class="farming-places-grid">
+                <!-- Dynamically populated by JavaScript -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Healthy Living Hub</h3>
+                <p>Promoting healthy living practices across the globe</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>+
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> tracynalubwama5@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +256 771 165 353</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Living Hub | All rights reserved</p>
+            <p>Last Updated: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Attributions</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/farming-places.js"></script>
+    <script src="scripts/wellness-tips.js"></script>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

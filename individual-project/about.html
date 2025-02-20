@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Healthy Living Hub's mission and team">
+    <title>About Us - Healthy Living Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/home.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo" width="50" height="50" loading="lazy">
+            </div>
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p>Promoting Healthy Living and Wellness</p>
+                <a href="#wellness-tips" class="cta-button">Explore Tips</a>
+            </div>
+        </section>
+        <!-- <section class="about-hero">
+           
+            <div class="hero-text">
+                <h1>About Us</h1>
+                <p>Promoting Healthy Living and Wellness</p>
+            </div>
+        </section> -->
+
+        <section class="mission-vision">
+            <div class="mission">
+                <i class="fas fa-bullseye"></i>
+                <h2>Our Mission</h2>
+                <p>To promote healthy living practices and provide valuable wellness tips.</p>
+            </div>
+            <div class="vision">
+                <i class="fas fa-eye"></i>
+                <h2>Our Vision</h2>
+                <p>Creating a community that embraces healthy living and wellness.</p>
+            </div>
+        </section>
+
+        <section class="key-features">
+            <h2>What We Do</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Nutrition Tips</h3>
+                    <p>Providing advice on healthy eating habits</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Fitness Guidance</h3>
+                    <p>Offering workout routines and fitness tips</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-spa"></i>
+                    <h3>Mental Wellness</h3>
+                    <p>Sharing techniques for mental well-being</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section (same as other pages) -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Healthy Living Hub</h3>
+                <p>Promoting healthy living practices across the globe</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> tracynalubwama5@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +256 771 165 353</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Living Hub | All rights reserved</p>
+            <p>Last Updated: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Attributions</a></p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/subscription.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
